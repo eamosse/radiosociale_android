@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        style="@style/layout_vertical">
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_launcher"
+            android:layout_alignParentTop="true"
+            android:visibility="gone"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="1dp"
+            android:id="@+id/photo_lampe"/>
+
+
+    <RelativeLayout
+            android:id="@+id/info_planteur"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            style="@style/layout_vertical"
+            android:background="@color/white"
+            android:isScrollContainer="true"
+            android:padding="10dp"
+            android:layout_centerInParent="true">
+
+        <TextView
+                android:id="@+id/label_frequency_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/info_label"
+                android:text="@string/frequency_name"
+                />
+
+        <TextView
+                android:id="@+id/frequency_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/form_label"
+                android:layout_toRightOf="@id/label_frequency_name"
+                />
+        <View
+                android:id="@+id/line_name"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/_blue"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@id/label_frequency_name"
+                />
+
+
+        <TextView
+                android:id="@+id/label_frequency_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/info_label"
+                android:text="@string/frequency_description"
+                android:layout_below="@id/line_name"
+                />
+
+        <TextView
+                android:id="@+id/frequency_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/form_label"
+                android:layout_below="@id/label_frequency_description"
+                />
+        <View
+                android:id="@+id/line_description"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/_blue"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@id/frequency_description"
+                />
+       
+    </RelativeLayout>
+</LinearLayout>

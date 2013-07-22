@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--     <string name="base_service_url">http://134.59.142.123:8080/RadioServer/webresources/</string> -->
+<!--     <string name="base_url">http://134.59.142.123:8080/RadioServer/</string> -->
+    
+    <string name="base_service_url">http://192.168.43.252:8080/RadioServer/webresources/</string>
+    <string name="base_url">http://192.168.43.252:8080/RadioServer/</string>
+</resources>

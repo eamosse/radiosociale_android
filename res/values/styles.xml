@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="LoginFormContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+    </style>
+    <style name="form_label">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">1dp</item>
+
+    </style>
+
+    <style name="info_label">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textColor">@color/_blue</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">1dp</item>
+    </style>
+
+    <style name="required">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="notif_label">
+    <item name="android:textSize">15sp</item>
+    <item name="android:textStyle">bold|italic</item>
+    <item name="android:textColor">@color/green</item>
+</style>
+
+    <style name="info_text">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:editTextBackground">@color/gray</item>
+    </style>
+
+    <style name="inventory_review">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="layout_vertical">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/gray</item>
+    </style>
+
+    <style name="layout_horizontal">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/gray</item>
+    </style>
+
+
+     <style name="Button" parent="@android:style/Widget.Button">
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:shadowColor">#FF000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:shadowRadius">0.2</item>
+        <item name="android:textSize">16dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+   
+    <style name="ActionBarHomeLogo">
+        <item name="android:layout_marginRight">1px</item>
+        <item name="android:layout_marginLeft">0px</item>
+    </style>
+    <style name="ActionBarProgressBar" parent="@android:style/Widget.ProgressBar.Small">
+    </style>
+    <style name="MooTheme" parent="android:Theme">
+        <item name="android:spinnerItemStyle">@style/MooSpinnerItem</item>
+    </style>
+
+    <style name="MooSpinnerItem" parent="android:Widget.TextView.SpinnerItem">
+        <item name="android:textAppearance">@style/MooTextAppearanceSpinnerItem</item>
+    </style>
+
+    <style name="MooTextAppearanceSpinnerItem" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    
+    	<style name="Animations" />
+
+	<!-- PopDownMenu -->
+	<style name="Animations.PopDownMenu" />
+	
+	<style name="Animations.PopDownMenu.Center">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_top</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_bottom</item>
+	</style>
+	
+	<style name="Animations.PopDownMenu.Left">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_topleft_to_bottomright</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_bottomright_to_topleft</item>
+	</style>
+	
+	<style name="Animations.PopDownMenu.Right">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_topright_to_bottomleft</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_bottomleft_to_topright</item>
+	</style>
+	
+	<style name="Animations.PopDownMenu.Reflect">
+		<item name="@android:windowEnterAnimation">@anim/pump_top</item>
+		<item name="@android:windowExitAnimation">@anim/disappear</item>
+	</style>
+	
+	<!-- PopUpMenu -->
+	<style name="Animations.PopUpMenu" />
+	
+	<style name="Animations.PopUpMenu.Center">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_bottom</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_top</item>
+	</style>
+	
+	<style name="Animations.PopUpMenu.Left">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_bottomleft_to_topright</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_topright_to_bottomleft</item>
+	</style>
+	
+	<style name="Animations.PopUpMenu.Right">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_bottomright_to_topleft</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_topleft_to_bottomright</item>
+	</style>
+	
+	<style name="Animations.PopUpMenu.Reflect">
+		<item name="@android:windowEnterAnimation">@anim/pump_bottom</item>
+		<item name="@android:windowExitAnimation">@anim/disappear</item>
+	</style>
+	
+	 <style name="FloydTheme" parent="@*android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/AnimationStyle</item>
+    </style>
+    <style name="AnimationStyle">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_from_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/stack_push</item>
+        <item name="android:activityCloseEnterAnimation">@anim/stack_pop</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_to_right</item>
+    </style>
+    <style name="FloydDialogTheme" parent="@style/FloydTheme" />
+    <style name="ContentDrawerTheme" parent="@*android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="ContentDrawerTabletTheme" parent="@style/ContentDrawerTheme">
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="ContentDrawerListView" parent="@*android:style/Widget.ListView">
+        <item name="android:listSelector">@drawable/listitem_selector</item>
+        <item name="android:cacheColorHint">@color/background_light</item>
+    </style>
+    <style name="AlertDialogStyle" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:textSize">50.0sp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ImageButtonNoBackground">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@null</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="TOCCompose" parent="@*android:style/Theme.Light.NoTitleBar.Fullscreen">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/toc_compose</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="EditAccount" parent="@*android:style/Theme.Light.NoTitleBar.Fullscreen">
+        <item name="android:background">@drawable/flaccount_edit_account</item>
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">false</item>
+    </style>
+    <style name="ContentDrawerCompose" parent="@*android:style/Theme.Light.NoTitleBar.Fullscreen">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/content_drawer_compose</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="textShadowBlack">
+        <item name="android:shadowColor">#66000000</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">0.01</item>
+    </style>
+    <style name="textShadowBlackDark">
+        <item name="android:shadowColor">#99000000</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">0.01</item>
+    </style>
+    <style name="textShadowBlackUp">
+        <item name="android:shadowColor">#66000000</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">-2.0</item>
+        <item name="android:shadowRadius">0.01</item>
+    </style>
+    <style name="textShadowWhite">
+        <item name="android:shadowColor">#66ffffff</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">0.01</item>
+    </style>
+    <style name="PopoverAnimation">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+    <style name="ProgressDialog" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/toast_rounded_edges</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="FLStaticTextView">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:maxLines">0</item>
+    </style>
+    <style name="FLLabelTextView">
+        <item name="android:textSize">16.0dip</item>
+    </style>
+    <style name="FLPopover" parent="@*android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+    <style name="FLPaperButtonDefault" parent="@*android:style/Theme.Light.NoTitleBar.Fullscreen">
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:textColor">#ff999999</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/paperbutton_default</item>
+        <item name="android:paddingLeft">8.0dip</item>
+        <item name="android:paddingRight">8.0dip</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:shadowColor">#66ffffff</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">0.01</item>
+    </style>
+    <style name="FLPaperButtonDark" parent="@*android:style/Theme.Light.NoTitleBar.Fullscreen">
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:textColor">#fff7f7f7</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/paperbutton_dark</item>
+        <item name="android:paddingLeft">@dimen/button_padding_left</item>
+        <item name="android:paddingTop">@dimen/button_padding_top</item>
+        <item name="android:paddingRight">@dimen/button_padding_right</item>
+        <item name="android:paddingBottom">@dimen/button_padding_bottom</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">-2.0</item>
+        <item name="android:shadowRadius">0.01</item>
+    </style>
+    <style name="FLPaperButtonDone" parent="@*android:style/Theme.Light.NoTitleBar.Fullscreen">
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:textColor">#fff7f7f7</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/paperbutton_done</item>
+        <item name="android:paddingLeft">@dimen/button_padding_left</item>
+        <item name="android:paddingTop">@dimen/button_padding_top</item>
+        <item name="android:paddingRight">@dimen/button_padding_right</item>
+        <item name="android:paddingBottom">@dimen/button_padding_bottom</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:shadowColor">#33000000</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">-2.0</item>
+        <item name="android:shadowRadius">0.01</item>
+    </style>
+    <style name="FLPaperButtonDarkDone" parent="@*android:style/Theme.Light.NoTitleBar.Fullscreen">
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:textColor">#fff7f7f7</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/paperbutton_dark_done</item>
+        <item name="android:paddingLeft">@dimen/button_padding_left</item>
+        <item name="android:paddingTop">@dimen/button_padding_top</item>
+        <item name="android:paddingRight">@dimen/button_padding_right</item>
+        <item name="android:paddingBottom">@dimen/button_padding_bottom</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:shadowColor">#33000000</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">-2.0</item>
+        <item name="android:shadowRadius">0.01</item>
+    </style>
+    <style name="FLInput">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/input_field</item>
+        <item name="android:paddingTop">5.0dip</item>
+        <item name="android:paddingBottom">6.0dip</item>
+    </style>
+
+</resources>
